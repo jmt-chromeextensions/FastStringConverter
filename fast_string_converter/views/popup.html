@@ -1,0 +1,70 @@
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="../styles/popup.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../styles/bootstrap/bootstrap.min.css"> -->
+
+	<script src="../jquery/jquery-3.4.1.min.js"></script>
+	<script src="../jquery/jquery-ui.min.js"></script>
+	<script src="../scripts/popup.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="container-contact100">
+
+			<form class="contact100-form validate-form">
+
+				<!-- This textarea displays the text that is currently contained in the clipboard. -->
+				<div class="wrap-input100 validate-input" </div>
+					<textarea id="clipboardTextArea" class="input100" name="message" placeholder="Clipboard text"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- These buttons are associated with the different conversion functions. -->
+
+				<!-- Uppercase/Lowercase -->
+
+				<div class="container-contact100-form-btn">
+					<button id="allLowerCase" type="button" class="contact100-form-btn"> <span> this is a sample sentence </span> </button>
+					<button id="allUpperCase" type="button" class="contact100-form-btn"> <span> THIS IS A SAMPLE SENTENCE </span> </button>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button id="sentenceType" type="button" class="contact100-form-btn"> <span> This is a sample sentence. </span> </button>
+					<button id="firstLettersUpperCase" type="button" class="contact100-form-btn"> <span> This Is A Sample Sentence </span> </button>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button id="alternateCase" type="button" class="contact100-form-btn"> <span> AbCd -> aBcD </span> </button>
+				</div>
+
+				<!-- Separators -->
+
+				<div class="container-contact100-form-btn">
+					<button id="underscoresToSpaces" type="button" class="contact100-form-btn"> <span> Underscores -> Spaces </span> </button>
+					<button id="spacesToUnderscores" type="button" class="contact100-form-btn"> <span> Spaces -> Underscores </span> </button>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button id="spacesToCaps" type="button" class="contact100-form-btn"> <span> word1 word2 -> Word1Word2 </span> </button>
+					<button id="capsToSpaces" type="button" class="contact100-form-btn"> <span> Word1Word2 -> word1 word2 </span> </button>
+				</div>
+
+				<!-- This textarea shows the text on which the last transformation has been applied. -->
+				<div class="wrap-input100 validate-input" </div>
+					<textarea id="previousTextArea" class="input100" name="message" placeholder="Previous text"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

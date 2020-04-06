@@ -1,0 +1,129 @@
+/* This stylesheet is adapted from the template that can be found here: https://colorlib.com/wp/template/contact-form-v10/ */
+
+@font-face {
+	font-family: Ubuntu-Bold;
+	src: url('fonts/Ubuntu-Bold.ttf'); 
+}
+
+
+* {
+	margin: 0px; 
+	box-sizing: border-box;
+}
+
+/* Generic HTML tags */
+
+textarea {
+	outline: none;
+	border: none;
+}
+
+textarea:focus, input:focus {
+	border-color: transparent !important;
+}
+
+textarea::-webkit-input-placeholder { 
+	color: #bdbdd3; 
+} 
+
+button {
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* Containers */
+
+/* Popup size */
+.container {
+	width: 783px;
+	height: 600px;
+}
+
+.container-contact100 {
+	width: inherit;
+	height: inherit;
+	display: flex;
+	padding: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: #f2f2f2;
+}
+
+/* Textareas */
+
+textarea.input100 {
+	min-height: 150px;
+	padding: 19px 35px 0 35px;
+}
+
+.wrap-input100 {
+	margin-bottom: 16px;
+	position: relative;
+	z-index: 1;
+}
+
+.input100 {
+	position: relative;
+	display: block;
+	width: 100%;
+	background: #fff;
+	border-radius: 31px;
+	font-family: Ubuntu-Bold;
+	font-size: 12px;
+	color: #8f8fa1;
+	line-height: 1.2;
+}
+
+/* Buttons */
+
+.container-contact100-form-btn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.contact100-form-btn {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 0 20px;
+	min-width: 300px;
+	height: 30px;
+
+	font-family: Ubuntu-Bold;
+	font-size: 16px;
+	color: #fff;
+
+	position: relative;
+	z-index: 1;
+}
+
+.contact100-form-btn::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 31px;
+	background-color: #4dab66;
+	pointer-events: none;
+
+	transition: all 0.4s;
+}
+
+.contact100-form-btn:hover:before {
+	background-color: #39804c;
+	width: calc(100% + 20px);
+}
+
+
+
