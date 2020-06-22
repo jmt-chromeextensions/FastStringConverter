@@ -4,7 +4,7 @@
   "version": "1.0.0.1",
 
   "browser_action": {
-    "default_title": "Turn off the light.",
+    "default_title": "Fast String Converter",
     "default_popup": "views/popup.html"
   },
   
